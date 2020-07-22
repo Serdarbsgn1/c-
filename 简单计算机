@@ -1,0 +1,15 @@
+int a,b;//整形a,b
+char d;//字符d
+cin>>a;//输入a
+scanf("%c",&d);//输入字符d
+cin>>b;//输入b
+if(d=='+') cout<<a+b<<endl;//如果字符d是+，那么a+b
+if(d=='-') cout<<a-b<<endl;//如果字符d是-，那么a-b
+if(d=='*') cout<<a*b<<endl;//如果字符d是*，那么a*b
+if(d=='/')                 //如果d是/
+{
+if(b!=0) cout<<a/b<<endl;//如果b不等于零，那么a/b
+if(b==0) cout<<"Divided by zero<<endl;//  如果b等于零，输出除数为零
+}    
+if(d!='+'&&d!='-'&&d!='*'&&d!='/') //如果d不等于+-*/
+printf("Invalid operator");    //输出无效的运算符
